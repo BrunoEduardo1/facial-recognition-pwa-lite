@@ -6,7 +6,7 @@ Simple Facial Recognition PWA
 
 ## Info
 
-Facial Recognition Javascript Ribrary [tracking.js](https://github.com/eduardolundgren/tracking.js)
+Facial Recognition Javascript Library [tracking.js](https://github.com/eduardolundgren/tracking.js)
 
 ### Author
 
