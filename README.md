@@ -1,7 +1,7 @@
 # Simple Facial Recognition PWA
 
-Simple Facial Recognition PWA. 
-[Demo](https://brunoeduardo1.github.io/facial-recognition-pwa-lite/)
+Simple Facial Recognition PWA 
+[Demo](https://brunoeduardo1.github.io/facial-recognition-pwa-lite/). <br/>
 [V1](https://brunoeduardo1.github.io/facial-recognition-pwa/) using other library, not working very well on mobile.
 
 ## Info
