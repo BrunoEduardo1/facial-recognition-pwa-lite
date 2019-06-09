@@ -82,13 +82,18 @@
 		    tracking.track('#myImg', tracker);
 
 		    tracker.on('track', function(event) {
-		        context.clearRect(0, 0, canvas.width, canvas.height);
+		    	if (event.data.length === 0){
+				 	console.log('Nenhm rosto encontrado');
+				 	$('#imgDiv').append( '<p class="mt-2 title"><i class="fas fa-user-slash"></i> Nenhm rosto identificado</p>' );
+		    	} else {
+			        context.clearRect(0, 0, canvas.width, canvas.height);
 
-		        event.data.forEach(function(rect) {
-		            context.strokeStyle = '#fff654';
-		            context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-		            context.lineWidth = 4.5;
-		        });
+			        event.data.forEach(function(rect) {
+			            context.strokeStyle = '#fff654';
+			            context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+			            context.lineWidth = 4.5;
+			        });
+		        }
 		    });
 
 		});
@@ -117,7 +122,7 @@
 					        '</div>'+
 					        '<div class="modal-footer">'+
 					          '<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>'+
-					          '<button type="button" class="btn btn-primary">Salvar</button>'+
+					          '<!-- <button type="button" class="btn btn-primary">Salvar</button> -->'+
 					        '</div>'+
 					      '</div>'+
 					    '</div>'+
