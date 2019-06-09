@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="author" content="Bruno Eduardo">
+  <meta name="description" content="Aplicação simples de reconhecimento facial">
+  <meta name="theme-color" content="#3E4EB8">
+  <title>Reconhecimento facial</title>
+  <link rel="canonical" href="https://brunoeduardo1.github.io/facial-recognition-pwa-lite/" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/material.min.css" rel="stylesheet">
+  <!-- custom styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- <link rel="icon" href=""> -->
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <div class="container h-100">
+    
+    <div class="row">
+
+      <div class="col-12 col-md-6 text-center mt-4 mx-auto">
+        <div class="card title">
+          <div class="card-body">
+            <h3>Reconhecimento facial</h3> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+     <div class="row">
+
+      <div class="col-12 mt-4 text-center">
+          <img src="imgs/undraw_profile_pic_ic5t.svg" id="profileImage" class="mx-auto" alt="Person picture">
+      </div>
+
+      <div class="col-6 col-md-6 text-center mt-4 mx-auto">
+        <div class="card" id="camButton">
+          <div class="card-body">
+            <i class="fas fa-camera icon-size-5"></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-6 text-center mt-4 mx-auto">
+        <div class="card">
+          <div class="card-body" id="uploadButton">
+            <i class="fas fa-upload icon-size-5"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div id="idMyModal"></div>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/tracking-min.js"></script>
+  <script type="text/javascript" src="js/models/face-min.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- Main js -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    // CODELAB: Register service worker.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/facial-recognition-pwa-lite/sw.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+      });
+    }
+  </script>
+  <!-- <script src="js/install.js"></script> -->
+</body>
+
+</html>
