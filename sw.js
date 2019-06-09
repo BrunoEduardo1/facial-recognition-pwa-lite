@@ -14,7 +14,7 @@ const FILES_TO_CACHE = [
   repository+'js/tracking-min.js',
   repository+'js/jquery-3.4.1.slim.min.js' ,
   repository+'js/main.js',
-  repository+'js/models/face.min.js',
+  repository+'js/models/face-min.js',
   repository+'imgs/undraw_profile_pic_ic5t.svg',
   repository+'imgs/icons/icons.png',
   repository+'manifest.json',
