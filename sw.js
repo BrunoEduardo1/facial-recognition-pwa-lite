@@ -6,7 +6,7 @@ const repository = '/facial-recognition-pwa-lite/';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
   '/facial-recognition-pwa-lite/',
-  repository+'/index.html',
+  repository+'index.html',
   repository+'css/bootstrap.min.css',
   repository+'css/material.min.css',
   repository+'css/style.css',
