@@ -17,7 +17,7 @@ const FILES_TO_CACHE = [
   repository+'js/models/face.min.js',
   repository+'imgs/undraw_profile_pic_ic5t.svg',
   repository+'imgs/icons/icons.png',
-  repository+'manifest.json'
+  repository+'manifest.json',
   repository+'sw.js'
 
 ];
